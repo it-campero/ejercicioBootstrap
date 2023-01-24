@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Bootstrap es un framework...</title>
+</head>
+
+<body class="" style="background-color: rgb(238, 235, 231);">
+  <!-- ----------------------EJERCICIO1------------------------>
+    <!-- JUMBOTRON -->
+  <div class="col-md-6 mt-3">
+    <div class="h-100 p-4 bg-light border rounded-3">
+      <h2>BOOTSTRAP-5</h2>
+      <p>Bootstrap es un framework front-end utilizado para desarrollar aplicaciones web y sitios mobile first, o sea, con un layout que se adapta a la pantalla del dispositivo utilizado por el usuario. ¡Aprende todo sobre esta tecnología y cómo utilizarla!</p>
+      <!-- <button class="btn btn-warning" type="button">Mas info</button> -->
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Open Modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><b>Mi correo</b></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/gmail_new_logo_icon_159149.png" alt="gmail-icon">
+          matiasrheinze@gmail.com
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <hr>
+  <!-- ----------------------EJERCICIO2------------------------>
+  <!-- CARD -->
+<div class="card" style="width: 20rem;">
+    <img src="img/perfil_01.webp" alt="card-img-top" class="card-img-top">
+    <div class="card-header text-center text-uppercase">
+       <b>Facundo Heinze</b>
+    </div>
+    
+    <div class="card-body">
+        <p class="card-text">Técnico en informática. HTML - CSS - JavaScript</p>
+        <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-light">Me gusta ir al cine</li>
+              <li class="list-group-item bg-light">Me gusta practicar Tennis</li>
+              <li class="list-group-item bg-light">Me gusta caminar por la playa</li>
+            </ul>
+           
+          </div>
+          
+    </div>
+<div class="card-footer">
+    <a href="#" class=""><img src="img/gmail_new_logo_icon_159149.png" alt="icon-gmail"> matiasrheinze@gmail.com</a>
+</div>
+</div>
+<hr>
+ <!-- ----------------------EJERCICIO3------------------------>
+<div class="d-flex flex-column align-items-center" style="width: 100%;">
+    <div class="mb-3">
+        <label for="name-label" class="form-label">Nombre</label>
+        <input type="text" id="name-label" class="form-control" placeholder="Nombre" style="width: 500px;">
+    </div>
+    <div class="mb-3">
+        <label for="number-label" class="form-label">Teléfono</label>
+        <input type="number" id="number-label" class="form-control" placeholder="Número de celular" style="width: 500px;">
+    </div>
+    <div class="mb-3">
+        <label for="textarea-label" class="form-label">Mensaje</label>
+        <textarea name="textarea-label" id="textarea-label" cols="10" rows="5" placeholder="Ingrese un comentario..." class="form-control" style="width: 500px;"></textarea>
+    </div>
+    
+</div>
+
+
+
+</body>
+<script src="bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+</html>
